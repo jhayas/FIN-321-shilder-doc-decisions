@@ -1,5 +1,4 @@
-Created by: FX Hedging Team
-Updated by: jhayaas
+Created by: Joshua Hayashida
 Date Created: 2026-03-31
 Date Updated: 2026-03-31
 Version: 1.0 | LLM Used: Claude
