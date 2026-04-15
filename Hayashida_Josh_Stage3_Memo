@@ -1,0 +1,102 @@
+Created by: Joshua Hayashida Date Created: 2026-04-14 Date Updated: 2026-04-14 Version: 1.0 | LLM Used: ChatGTP To: Adam Stauffer
+
+
+
+## 1. Problem Statement
+
+The firm has a EUR-denominated receivable of €12,500,000 due in one year from a European client engagement. At the current spot rate of 1.0875 USD/EUR, the exposure is approximately $13.59 million. This creates material foreign exchange (FX) risk, as fluctuations in the EUR/USD exchange rate will directly impact USD cash flows.
+
+A depreciation of the euro would reduce the USD value of the receivable, potentially resulting in a significant revenue shortfall. For example, a 5–10% decline in EUR/USD could reduce proceeds by over $600,000 to $1.2 million. The objective of this model is to evaluate hedging strategies that mitigate downside risk while considering cost and upside participation.
+
+---
+
+## 2. Inputs (Known Variables)
+
+| Named Range | Description | Unit | Value | Source |
+|------------|------------|------|------|--------|
+| FC_AMT | Foreign-currency receivable | EUR | 12,500,000 | Stage 1 Memo |
+| S0_in | Spot rate at inception | USD/EUR | 1.0875 | Bloomberg |
+| F0_in | Forward rate (1-year) | USD/EUR | 1.0910 | Given |
+| R_USD | USD interest rate | % annual | 3.33% | Assumed |
+| R_FC | EUR interest rate | % annual | 3.00% | Assumed |
+| K_PUT | Put option strike | USD/EUR | 1.0875 | Assumed |
+| K_CALL | Call option strike | USD/EUR | 1.1000 | Assumed |
+| PREM_PUT | Put premium per EUR | USD | 0.017 | Given |
+| PREM_CALL | Call premium per EUR | USD | 0.022 | Given |
+| T_DAYS | Time to settlement | Days | 360 | Assumed |
+
+---
+
+## 3. Assumptions & Constraints
+
+- Interest rates are simple annual rates using a 360-day convention.
+- No transaction costs, taxes, or bid-ask spreads.
+- Options are European-style.
+- Forward and money market hedges satisfy parity.
+- Premiums are paid upfront.
+- No credit or counterparty risk.
+- Deterministic sensitivity (no stochastic modeling).
+
+---
+
+## 4. Calculation Flow
+
+### 4.1 Forward Hedge
+USD proceeds = FC_AMT × F0_in
+
+### 4.2 Money Market Hedge
+1. Discount EUR receivable
+2. Convert to USD at spot
+3. Invest at USD rate
+
+### 4.3 Protective Put
+USD proceeds = FC_AMT × max(K_PUT, S_T) − premium
+
+### 4.4 Risk Reversal
+USD proceeds = FC_AMT × min(max(S_T, K_PUT), K_CALL) − net premium
+
+---
+
+## 5. Outputs
+
+- Forward hedge proceeds
+- Money market hedge proceeds
+- Option hedge outcomes
+- Sensitivity table (-5% to +5%)
+- Comparison chart
+
+---
+
+## 6. Model Review
+
+### What Worked
+- Forward ≈ Money Market (parity)
+- Logical option payoff behavior
+- Clear structure
+
+### Improvements
+- Use real market rates
+- Add transaction costs
+- Improve premium modeling
+- Add probabilistic analysis
+
+---
+
+## 7. Sensitivity Plan
+
+- Range: ±5% from spot
+- Step: 1%
+- Shows trade-offs across strategies
+
+---
+
+## 8. Limitations & Next Steps
+
+### Limitations
+- No dynamic hedging
+- No credit risk
+- No accounting treatment
+
+### Next Steps
+- Use for Stage 4 AI prompt
+- Deliver hedge recommendation
