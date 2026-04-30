@@ -1,5 +1,11 @@
 # stage4-final-analysis-hayashida.md
 
+Created by: Joshua Hayashida 
+Date Created: 2026-04-27 
+Date Updated: 2026-05-01 
+Version: 2.0 | LLM Used: ChatGPT 
+To: Adam Stauffer
+
 ## A. Exposure Summary
 
 The firm has a **€12,500,000 EUR-denominated receivable due in one year** arising from a European client engagement. At the current spot rate of **1.0875 USD/EUR**, this represents an expected USD cash inflow of approximately:
@@ -36,7 +42,7 @@ This strategy eliminates all FX uncertainty. Regardless of where EUR/USD moves o
 - Eliminates downside risk entirely  
 - Removes any opportunity to benefit from favorable currency movements  
 
-👉 **Insight:** The forward hedge is the most conservative and risk-averse strategy, ideal for firms that prioritize financial stability and predictable outcomes over potential gains.
+ **Insight:** The forward hedge is the most conservative and risk-averse strategy, ideal for firms that prioritize financial stability and predictable outcomes over potential gains.
 
 ---
 
@@ -58,7 +64,7 @@ This is nearly identical to the forward hedge outcome.
 - Produces equivalent economic results to the forward hedge  
 - Requires balance sheet usage and operational execution  
 
-👉 **Insight:** While economically sound, the money market hedge is less efficient operationally compared to a forward contract and is typically not preferred when forwards are readily available.
+ **Insight:** While economically sound, the money market hedge is less efficient operationally compared to a forward contract and is typically not preferred when forwards are readily available.
 
 ---
 
@@ -80,7 +86,7 @@ The protective put provides a **downside floor** while preserving upside potenti
 - Allows full participation in EUR appreciation  
 - Reduces net proceeds due to premium cost  
 
-👉 **Insight:** This strategy introduces flexibility and asymmetry, but at a measurable cost. It is best suited for firms willing to pay for upside participation.
+ **Insight:** This strategy introduces flexibility and asymmetry, but at a measurable cost. It is best suited for firms willing to pay for upside participation.
 
 ---
 
@@ -103,7 +109,7 @@ The risk reversal reduces hedge cost by combining:
 - Partial downside protection  
 - Caps gains beyond call strike  
 
-👉 **Insight:** This is a cost-efficient compromise strategy that balances risk and reward, but introduces trade-offs in upside potential.
+ **Insight:** This is a cost-efficient compromise strategy that balances risk and reward, but introduces trade-offs in upside potential.
 
 ---
 
@@ -122,7 +128,7 @@ The unhedged position produces:
 - Full participation in upside and downside  
 - High uncertainty and unpredictability  
 
-👉 **Insight:** This strategy is not appropriate for firms requiring stable and predictable financial outcomes.
+ **Insight:** This strategy is not appropriate for firms requiring stable and predictable financial outcomes.
 
 ---
 
@@ -148,7 +154,7 @@ The sensitivity analysis highlights how each hedging strategy behaves across a r
 - The risk reversal partially protects but allows some downside exposure  
 - The unhedged position suffers the most  
 
-👉 **Key Insight:** The value of hedging is most evident in downside scenarios, where the forward hedge protects over **$700,000 in potential loss**.
+ **Key Insight:** The value of hedging is most evident in downside scenarios, where the forward hedge protects over **$700,000 in potential loss**.
 
 ---
 
@@ -168,7 +174,7 @@ The sensitivity analysis highlights how each hedging strategy behaves across a r
 - The risk reversal caps gains  
 - The forward hedge forfeits all upside  
 
-👉 **Key Insight:** Option-based strategies provide flexibility, but at a cost or with constraints, while forward hedges prioritize certainty.
+ **Key Insight:** Option-based strategies provide flexibility, but at a cost or with constraints, while forward hedges prioritize certainty.
 
 ---
 
@@ -178,7 +184,7 @@ The sensitivity analysis highlights how each hedging strategy behaves across a r
 
 The firm should execute a **full forward hedge**, locking in:
 
-👉 **$13,637,500 in guaranteed USD proceeds**
+ **$13,637,500 in guaranteed USD proceeds**
 
 ---
 
@@ -229,7 +235,7 @@ The strategy completely removes exposure to unfavorable exchange rate movements,
 
 ---
 
-👉 **Executive Conclusion:**  
+ **Executive Conclusion:**  
 While option strategies offer flexibility, the firm’s priority should be **risk reduction and financial stability**, making the forward hedge the optimal choice.
 
 ---
@@ -321,11 +327,3 @@ AI tools could automate FX hedging models by integrating real-time market data, 
 Using GitHub to store models, specifications, and prompts creates a transparent and auditable workflow. This ensures reproducibility, supports collaboration, and aligns with best practices in financial governance and audit readiness.
 
 ---
-
-## ✅ Final Result
-
-This version now:
-- Meets **2–4 page requirement**
-- Includes **real numbers + analysis**
-- Demonstrates **executive-level thinking**
-- Contains a **complete structured AI prompt**
